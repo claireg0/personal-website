@@ -389,7 +389,7 @@ function runCmd(input) {
       ]);
     case "uptime":
       return out([
-        <span className="out">up <span className="acc">~6 years</span>, load average: caffeine, curiosity, ctrl-z</span>,
+        <span className="out">up <span className="acc">~6 years</span>, never looked back</span>,
       ]);
     case "neofetch":
       return out([
