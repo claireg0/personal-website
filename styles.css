@@ -983,3 +983,101 @@ p.body {
   background: rgba(255,255,255,0.12);
   border-radius: 8px;
 }
+
+/* ============== MOBILE ============== */
+@media (max-width: 640px) {
+  /* Menu bar: hide the filler menu items, keep app name + clock */
+  .menubar-item:not(:first-of-type) { display: none; }
+  .menubar-status { display: none; }
+
+  /* Hide desktop icons — dock handles navigation */
+  .desktop-icons { display: none; }
+
+  /* Hide quick-facts note; keep welcome note */
+  .sticky-note:not(.note-2) { display: none !important; }
+  .sticky-note.note-2 {
+    position: fixed !important;
+    top: 38px !important;
+    right: 8px !important;
+    left: auto !important;
+    width: 160px;
+    font-size: 12px;
+    padding: 10px 12px 12px;
+    z-index: 800;
+    cursor: default;
+    transform: rotate(1.5deg) !important;
+  }
+  .sticky-note.note-2:hover { transform: rotate(1.5deg) !important; }
+
+  /* Windows: always fill the space between menu bar and dock */
+  .window {
+    left: 0 !important;
+    top: 30px !important;
+    width: 100vw !important;
+    height: calc(100dvh - 30px - 76px) !important;
+    border-radius: 0 !important;
+    min-width: unset;
+  }
+
+  /* Resizer: no mouse on touch */
+  .resizer { display: none; }
+
+  /* Titlebar buttons: bigger tap targets */
+  .tb-btn { width: 16px; height: 16px; }
+
+  /* Dock: full-width strip at the very bottom */
+  .dock-wrap {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+  }
+  .dock {
+    border-radius: 0;
+    width: 100%;
+    padding: 6px 8px;
+    gap: 4px;
+    justify-content: space-around;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .dock-item {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    flex-shrink: 0;
+    touch-action: manipulation;
+  }
+  /* No bounce animation on touch */
+  .dock-item:hover { transform: none; }
+  .dock-divider { display: none; }
+
+  /* Window padding: tighter on small screens */
+  .win-pad    { padding: 16px 18px; }
+  .win-pad-lg { padding: 20px 20px; }
+
+  /* About hero: stack avatar + text vertically */
+  .about-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 16px;
+  }
+  .avatar { margin: 0 auto; }
+  .about-meta { justify-content: center; }
+
+  /* About info cards: single column */
+  .about-grid { grid-template-columns: 1fr; }
+
+  /* Education stats: single column */
+  .edu-row { grid-template-columns: 1fr; }
+
+  /* Display heading: scale down */
+  h1.display { font-size: 26px; }
+
+  /* Mail compose label column: narrower */
+  .mail-field { grid-template-columns: 56px 1fr; }
+
+  /* Connect card buttons: allow wrapping */
+  .li-actions { flex-wrap: wrap; }
+}
