@@ -13,7 +13,7 @@ function AboutWin() {
         <div>
           <div className="section-eyebrow">hello, world</div>
           <h1 className="display">I'm <em>Claire Guo</em>.</h1>
-          <p className="body">Software engineer with experienced in applied AI and full-stack.</p>
+          <p className="body">Software engineer with experience in applied AI and full-stack.</p>
           <div className="about-meta">
             <span className="chip">claire.jl.guo@gmail.com</span>
             <span className="chip muted">Waterloo, ON</span>
