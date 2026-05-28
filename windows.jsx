@@ -88,12 +88,7 @@ const EXPERIENCE = [
     loc: "New York, NY",
     date: "Jan – May 2026",
     bullets: [
-      <>Designed a <span className="tl-metric">Redis-backed</span> authentication cache decoupling token validation from backend instances — <span className="tl-metric">−50% validation latency</span> across Nginx-balanced servers.</>,
-      <>Orchestrated terabyte-scale Snowflake schema migration with Dagster workflows and Prisma.</>,
-      <>Resolved session-stickiness bugs in WebSocket infrastructure by fixing backend affinity in reconnection logic.</>,
-      <>Architected an agent system for a PowerPoint plugin — sandboxed execution, volume-backed file systems, real-time WS with fallback, verification, and context compaction.</>,
-      <>Benchmarked and refined LLM token-estimation algorithms — <span className="tl-metric">+39% accuracy</span>.</>,
-      <>Redesigned prompting, fallback, and streaming logic for LLM agent workflows — indefinite session hangs from <span className="tl-metric">13% → 0.5%</span>.</>,
+      <>Served as a Software Engineering Intern and contributed to internal software engineering projects</>,
     ],
   },
   {
