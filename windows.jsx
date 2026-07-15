@@ -119,6 +119,17 @@ const EXPERIENCE = [
 
 const PROJECTS = [
   {
+    id: "compiler",
+    role: "LACS Compiler",
+    company: "Scala",
+    loc: "Personal",
+    date: "2025",
+    bullets: [
+      <>Built a compiler for LACS (a Scala-like language) in Scala, spanning lexing, parsing, semantic analysis, and code generation.</>,
+      <>Implemented type checking and lowering to a target backend, with an end-to-end test suite covering language features.</>,
+    ],
+  },
+  {
     id: "drone",
     role: "Multi-Agent Drone Flock Simulation",
     company: "Python · Gymnasium · PPO · PyVista",
